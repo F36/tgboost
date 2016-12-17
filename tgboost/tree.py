@@ -63,7 +63,7 @@ class Tree(object):
 
         this gain is the loss reduction, We want it to be as large as possible.
 
-        G_nan, H_nan from NAN faeture value data, if nan_direction==0, they go to the left child.
+        G_nan, H_nan from NAN feature value data, if nan_direction==0, they go to the left child.
         """
         GL = left_Y.grad.sum() + (1-nan_direction)*G_nan
         HL = left_Y.hess.sum() + (1-nan_direction)*H_nan
