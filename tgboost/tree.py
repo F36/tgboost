@@ -163,8 +163,8 @@ class Tree(object):
     def split_dataset(self, X, Y, feature, threshold, nan_direction):
         """
         split the dataset according to (feature,threshold), nan_direction
-            if faeture_value < feature_threshold, samples go to left child
-            if faeture_value >= feature_threshold, samples go to right child
+            if feature_value < feature_threshold, samples go to left child
+            if feature_value >= feature_threshold, samples go to right child
             if feature_value==NAN and nan_direction==0, samples go to left child.
             if feature_value==NAN and nan_direction==1, samples go to right child.
         """
